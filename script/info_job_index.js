@@ -14,6 +14,7 @@ document.addEventListener("click", e=>{
         localStorage.removeItem("job");
         $loader.classList.remove("none");
         setTimeout(()=>{
+            $loader.classList.add("none");
             location.href="../index.html";
         },1500)
     }

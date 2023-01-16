@@ -42,6 +42,7 @@ document.addEventListener("click", e=>{
         localStorage.setItem("job",JSON.stringify(filterData[id]));
         $loader.classList.remove("none");
         setTimeout(()=>{
+            $loader.classList.add("none");
             location.href = "./pages/info_job.html"
         },1500)
     }
