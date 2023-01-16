@@ -44,7 +44,7 @@ document.addEventListener("click", e=>{
         setTimeout(()=>{
             $loader.classList.add("none");
             location.href = "./pages/info_job.html"
-        },1500)
+        },1000)
     }
 })
 

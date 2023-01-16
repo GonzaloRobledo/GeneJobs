@@ -12,7 +12,7 @@ ul{
 a{
     text-decoration: none;
 }
-.conteiner-85{
+.conteiner-80{
     max-width: 80%;
     margin:0 auto;
 }
@@ -101,7 +101,7 @@ header .hero-img{
     }
 }
 @media (max-width: 740px){
-    .conteiner-85{
+    .conteiner-80{
         max-width: 92%;
         margin:0 auto;
     }
@@ -110,7 +110,7 @@ header .hero-img{
     } */
 }
 @media (max-width: 650px){
-    header .hero-img.conteiner-85{
+    header .hero-img.conteiner-80{
         max-width: 100%;
     }
     header .hero-img{
@@ -121,8 +121,8 @@ header .hero-img{
     header .hero-img{
         padding:40px 10px;
     }
-    .conteiner-85{
-        max-width: 95%;
+    .conteiner-80{
+        max-width: 92%;
     }
 }
 

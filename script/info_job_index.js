@@ -12,10 +12,8 @@ document.addEventListener("click", e=>{
 
     if(e.target.matches(".back") || e.target.matches(".back *")){
         localStorage.removeItem("job");
-        $loader.classList.remove("none");
         setTimeout(()=>{
-            $loader.classList.add("none");
             location.href="../index.html";
-        },1500)
+        },1000)
     }
 })
