@@ -1,7 +1,9 @@
 export let data = [];
+import { $loader } from "./index.js";
 
 export const getAllJobs = async () => {
     try{
+        $loader.classList.remove("none");
         let res = await fetch('https://arbeitnow-free-job-board.p.rapidapi.com/api/job-board-api',{
             method: "GET",
             headers: {

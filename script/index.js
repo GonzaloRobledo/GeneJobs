@@ -1,6 +1,6 @@
 //VARIABLES
 import { data } from "./get_all_jobs.js";
-const $loader = document.getElementById("loader");
+export const $loader = document.getElementById("loader");
 let filterData;
 let $numPage = document.getElementById("num-page");
 
@@ -13,6 +13,7 @@ import { filterAll } from "./filter_all.js";
 //EVENTOS Y DEMAS
 document.addEventListener("DOMContentLoaded", async e=>{
     await getAllJobs();
+    $loader.classList.add("none");
     renderJobs(data,1);
     filterData = data;
     loadCitys(filterData);
