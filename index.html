@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/bb2dada181.js" crossorigin="anonymous"></script>
+    <!--MY STYLES-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GeneJobs</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="conteiner-85">Gene Jobs</h1>
+        <div class="hero-img conteiner-85">
+            <div>
+                <input type="text" placeholder="Title, companies..." id="input-search">
+                <button id="btn-search">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteiner-85">
+        <section class="section-filter"><!--Section filter-->
+            <form>
+                <input type="checkbox" name="fulltime" id="fulltime">
+                <label for="fulltime">Full time</label>
+
+                <h3>Location</h3>
+
+                <input type="text" placeholder="City, state, zip code or country" id="filter-location">
+                <!--Lo de aca abajo se carga dinamicamente-->
+                <section id="citys">
+                    <div>
+                        <input type="radio" value="all" id="all" name="city" class="city">
+                        <label for="all">All</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="Berlin" id="Berlin" name="city" class="city">
+                        <label for="Berlin">Berlin</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="Stuttgart" id="Stuttgart" name="city" class="city">
+                        <label for="Stuttgart">Stuttgart</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="Fellbach" id="Fellbach" name="city" class="city">
+                        <label for="Fellbach">Fellbach</label>
+                    </div>
+                </section>
+            </form>
+        </section>
+
+        <section class="section-jobs"><!--Section jobs-->
+            <ul id="list-jobs">
+
+            </ul>
+            <div class="quantity-pages">
+                <i class="fa-solid fa-chevron-left"></i>
+                <p id="num-page">1</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </section>
+
+        <div id="loader" class="none">
+            <img src="assets/loader.svg" alt="loader">
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados Gonzalo Robledo &copy; 2023</p>
+    </footer>
+
+    <script src="script/index.js" type="module"></script>
+</body>
+
+</html>
