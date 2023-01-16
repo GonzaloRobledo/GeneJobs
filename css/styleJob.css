@@ -134,8 +134,14 @@ main{
     font-weight: bold;
     font-size:17px;
     border-radius: 5px;
+    cursor: pointer;
+    transition:all 0.1s ease;
 }
-
+.btn-apply:hover{
+    color:rgb(0, 0, 109);
+    outline:3px solid rgb(0, 0, 109);
+    background-color: inherit;
+}
 @media (max-width: 900px){
     body{
         display:block;
